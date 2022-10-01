@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=League+Spartan&display=swap');
+
 .container {
   padding: 0 2rem;
 }
@@ -43,6 +45,10 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  font-weight: normal;
+  background: -webkit-linear-gradient(0deg ,#37a0c6, #8c1bc0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .title,
@@ -51,9 +57,9 @@
 }
 
 .description {
-  margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  color: #666;
 }
 
 .code {
@@ -106,6 +112,15 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  border-radius: 50%;
 }
 
 @media (max-width: 600px) {
