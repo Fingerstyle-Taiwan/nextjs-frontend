@@ -1,5 +1,13 @@
 # FingerStyle Taiwan Frontend
 
+## Prerequisites
+
+Make sure you have installed all of the following prerequisites on your development machine:
+
+- docker - [installation](https://docs.docker.com/compose/install/)
+- docker-compose - [installation](https://docs.docker.com/compose/install/)
+- make
+
 ## Getting Started
 
 ### development
