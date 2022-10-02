@@ -10,5 +10,11 @@ module.exports = {
   plugins: [
     require("flowbite/plugin")
   ],
-  theme: {},
+  theme: {
+    extend: {
+      fontFamily: {
+        Kalam: ["Kalam"],
+      },
+    },
+  },
 };
