@@ -1,5 +1,5 @@
 setup:
-	@docker build --target dev -t fingerstyle-frontend-dev .
+	@docker build --no-cache --target dev -t fingerstyle-frontend-dev .
 
 up:
 	@docker-compose -f docker-compose.dev.yml up -d

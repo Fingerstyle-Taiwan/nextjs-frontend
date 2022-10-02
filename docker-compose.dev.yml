@@ -5,11 +5,8 @@ services:
     image: fingerstyle-frontend-dev
     volumes:
       - ./:/app
-      - exclude:/app/node_modules/
+      - /app/node_modules/
     ports:
       - 3000:3000
     stdin_open: true
     tty: true
-
-volumes:
-  exclude:
