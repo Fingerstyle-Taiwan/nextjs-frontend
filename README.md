@@ -21,6 +21,11 @@ up development services
 make up
 ```
 
+access in browser
+```
+http://localhost:3000
+```
+
 down development services
 ```sh
 make down
