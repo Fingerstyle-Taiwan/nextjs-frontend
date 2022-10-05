@@ -14,7 +14,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Kalam: ["Kalam"],
+        OpenSans: ["Open Sans"],
       },
     },
   },
