@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam&family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Kalam', cursive;
+  font-family: 'Open Sans';
 }
 
 a {
