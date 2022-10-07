@@ -1,6 +1,10 @@
 CONTAINER_NAME=fingerstyle-frontend-dev-container
 DOCKER_COMPOSE_OPTS= -f docker-compose.dev.yml 
 
+define docker_compose_run
+	@docker-compose $(DOCKER_COMPOSE_OPTS) run frontend sh -c "$(1)"
+endef
+
 define docker_compose
 	@docker-compose $(DOCKER_COMPOSE_OPTS) $(1)
 endef
