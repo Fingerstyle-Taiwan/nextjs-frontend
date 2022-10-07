@@ -1,4 +1,10 @@
 CONTAINER_NAME=fingerstyle-frontend-dev-container
+DOCKER_COMPOSE_OPTS= -f docker-compose.dev.yml 
+
+define docker_compose
+	@docker-compose $(DOCKER_COMPOSE_OPTS) $(1)
+endef
+
 env:
 	@echo CONTAINER_NAME=$(CONTAINER_NAME) | tee -a .env
 
@@ -8,13 +14,13 @@ build:
 setup: env build 
 
 up:
-	@docker-compose -f docker-compose.dev.yml up -d
+	$(call docker_compose, up -d)
 
 restart:
-	@docker-compose -f docker-compose.dev.yml restart
+	$(call docker_compose, restart)
 
 down:
-	@docker-compose -f docker-compose.dev.yml down
+	$(call docker_compose, down)
 
 build-production:
 	@docker build --no-cache -t fingerstyle-frontend .
