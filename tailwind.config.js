@@ -6,6 +6,7 @@ module.exports = {
     "./node_modules/flowbite-react/**/*.js",
     "./pages/**/*.{ts,tsx}",
     "./public/**/*.html",
+    "./components/**/*.{ts,tsx}",
   ],
   plugins: [
     require("flowbite/plugin")
@@ -13,7 +14,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Kalam: ["Kalam"],
+        OpenSans: ["Open Sans"],
       },
     },
   },
