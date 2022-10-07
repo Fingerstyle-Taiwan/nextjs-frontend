@@ -1,5 +1,11 @@
-setup:
+CONTAINER_NAME=fingerstyle-frontend-dev-container
+env:
+	@echo CONTAINER_NAME=$(CONTAINER_NAME) | tee -a .env
+
+build:
 	@docker build --no-cache --target dev -t fingerstyle-frontend-dev .
+
+setup: env build 
 
 up:
 	@docker-compose -f docker-compose.dev.yml up -d
