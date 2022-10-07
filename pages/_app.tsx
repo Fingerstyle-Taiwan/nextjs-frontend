@@ -5,7 +5,7 @@ import Script from 'next/script'
 function MyApp({ Component, pageProps }: AppProps) {
   return 
     <>
-        <Script strategy="lazyOnload">
+        <Script strategy="lazyOnload" id="-script">
                   {`
                       window.dataLayer = window.dataLayer || [];
                       function gtag(){dataLayer.push(arguments);}
