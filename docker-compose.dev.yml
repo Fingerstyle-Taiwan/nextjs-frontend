@@ -2,6 +2,7 @@ version: '3.6'
 
 services:
   frontend:
+    container_name: ${CONTAINER_NAME}
     image: fingerstyle-frontend-dev
     volumes:
       - ./:/app
