@@ -26,6 +26,10 @@ restart:
 down:
 	$(call docker_compose, down)
 
+# docker_compose_run example
+# test:
+# 	$(call docker_compose_run, echo 123)
+
 build-production:
 	@docker build --no-cache -t fingerstyle-frontend .
 
