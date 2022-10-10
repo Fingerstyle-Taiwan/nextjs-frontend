@@ -1,19 +1,22 @@
 import Head from 'next/head'
-import { ReactNode } from 'react';
+import { ReactNode } from 'react'
 
 interface TemplateProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 const Template = (props: TemplateProps) => {
-  const { children } = props;
+  const { children } = props
   return (
     <div>
       <Head>
         <title>FingerStyle Taiwan</title>
 
         <meta name="description" content="fingerstyle taiwan group" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=1"
+        />
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content="FingerStyle Taiwan" />
@@ -26,7 +29,7 @@ const Template = (props: TemplateProps) => {
       </Head>
       {children}
     </div>
-  );
+  )
 }
 
-export default Template;
+export default Template

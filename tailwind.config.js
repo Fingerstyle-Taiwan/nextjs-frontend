@@ -3,19 +3,17 @@
  */
 module.exports = {
   content: [
-    "./node_modules/flowbite-react/**/*.js",
-    "./pages/**/*.{ts,tsx}",
-    "./public/**/*.html",
-    "./components/**/*.{ts,tsx}",
+    './node_modules/flowbite-react/**/*.js',
+    './pages/**/*.{ts,tsx}',
+    './public/**/*.html',
+    './components/**/*.{ts,tsx}',
   ],
-  plugins: [
-    require("flowbite/plugin")
-  ],
+  plugins: [require('flowbite/plugin')],
   theme: {
     extend: {
       fontFamily: {
-        OpenSans: ["Open Sans"],
+        OpenSans: ['Open Sans'],
       },
     },
   },
-};
+}
