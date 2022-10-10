@@ -41,7 +41,7 @@ restart-production:
 	@docker-compose up -d
 
 prettier:
-	yarn run prettier
+	$(call docker_compose_run, yarn run prettier)
 
 lint:
-	yarn run lint
+	$(call docker_compose_run, yarn run lint)
