@@ -3,9 +3,9 @@ import type { AppProps } from 'next/app'
 import Script from 'next/script'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return 
+  return(
     <>
-        <Script strategy="lazyOnload" id="-script">
+        <Script strategy="lazyOnload" id="google-ad-script">
                   {`
                       window.dataLayer = window.dataLayer || [];
                       function gtag(){dataLayer.push(arguments);}
@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </Script>
         <Component {...pageProps} />
     </>
-   
+  )
 
 }
 
