@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "analyze-bundle": "cross-env ANALYZE=true yarn build",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|tsx)\""
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|tsx)\""
   },
   "dependencies": {
     "@next/bundle-analyzer": "^12.3.1",
