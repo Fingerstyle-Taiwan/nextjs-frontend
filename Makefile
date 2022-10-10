@@ -10,7 +10,7 @@ define docker_compose
 endef
 
 env:
-	@echo CONTAINER_NAME=$(CONTAINER_NAME) | tee -a .env
+	@echo CONTAINER_NAME=$(CONTAINER_NAME) > .env
 
 build:
 	@docker build --no-cache --target dev -t fingerstyle-frontend-dev .
