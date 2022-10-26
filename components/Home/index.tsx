@@ -24,7 +24,7 @@ const Home = () => {
             itemBlocksContent.map((item, index) => {
               return (
                 <div key={index} className="flex justify-center">
-                  <ItemBlock icon={item.icon} desc={item.desc} />
+                  <ItemBlock icon={item.icon} desc1={item.desc1} desc2={item.desc2} />
                 </div>
               )
             })
