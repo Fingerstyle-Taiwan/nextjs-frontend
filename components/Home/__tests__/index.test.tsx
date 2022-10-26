@@ -9,6 +9,6 @@ describe('Home', () => {
   it('should render title', () => {
     const { queryByText } = createRenderer()
 
-    expect(queryByText('Fingerstyle Taiwan')).toBeInTheDocument()
+    expect(queryByText('一站式服務的指彈平台即將來臨')).toBeInTheDocument()
   })
 })
