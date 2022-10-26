@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import { ReactNode } from 'react'
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 interface TemplateProps {
   children: ReactNode
@@ -27,7 +29,11 @@ const Template = (props: TemplateProps) => {
 
         <link rel="icon" href="/logo.jpg" />
       </Head>
-      {children}
+      <Navbar />
+      <div className="px-12 lg:px-36">
+        {children}
+      </div>
+      <Footer />
     </div>
   )
 }
