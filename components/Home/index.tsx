@@ -1,4 +1,5 @@
 import ItemBlock from "./ItemBlock"
+import Link from "next/link"
 import { itemBlocksContent } from "./ItemBlock/constants"
 
 const Home = () => {
@@ -14,12 +15,12 @@ const Home = () => {
           <div className="mt-4 lg:mt-2 text-4xl lg:text-5xl">一站式服務的指彈平台即將來臨</div>
         </div>
         <div className="mt-8 font-medium text-lg text-[#475569]">指彈台灣是由一群音樂愛好者所成立的組織，致力於打造史上最豐富的指彈吉他資源網站！</div>
-        <div className="mt-8 font-semibold text-2xl text-white w-40 h-16 bg-main mx-auto flex justify-center items-center rounded-[32px] cursor-pointer">
-          <a href="https://discord.gg/XrhUFqfrdq" target="_blank">
-          加入社群
+        <Link href="https://discord.gg/XrhUFqfrdq">
+          <a className="mt-8 font-semibold text-2xl text-white w-40 h-16 bg-main mx-auto flex justify-center items-center rounded-[32px] cursor-pointer" target="_blank">
+            加入社群
           </a>
-          </div>
-        <div className="block-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:w-[700px] mx-auto mt-8">
+        </Link>
+        <div className="block-container grid grid-cols-2 lg:grid-cols-3 gap-3 lg:w-[700px] mx-auto mt-8">
           {
             itemBlocksContent.map((item, index) => {
               return (
