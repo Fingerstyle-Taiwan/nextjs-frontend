@@ -30,7 +30,7 @@ const Template = (props: TemplateProps) => {
         <link rel="icon" href="/logo.jpg" />
       </Head>
       <Navbar />
-      <div className="px-12 lg:px-36">
+      <div className="px-6 lg:px-12 lg:px-36">
         {children}
       </div>
       <Footer />
