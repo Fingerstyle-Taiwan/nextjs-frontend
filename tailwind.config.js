@@ -10,6 +10,11 @@ module.exports = {
   ],
   plugins: [require('flowbite/plugin')],
   theme: {
+    colors: {
+      main: "#4F46E5",
+      mainDark: "#312E81",
+      background: "#f5f5f5"
+    },
     extend: {
       fontFamily: {
         OpenSans: ['Open Sans'],
