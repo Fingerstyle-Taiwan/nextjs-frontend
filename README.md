@@ -10,6 +10,8 @@ Make sure you have installed all of the following prerequisites on your developm
 - docker-compose - [installation](https://docs.docker.com/compose/install/)
 - make
 
+If you have installed problem about Windows, you can see this guideline. - [Document](https://drive.google.com/file/d/1A-wWUtqTkGps1rMh0X49dj-iigUxBlo3/view?usp=sharing)
+
 ## Getting Started
 
 ### development
