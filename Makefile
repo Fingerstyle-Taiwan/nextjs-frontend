@@ -1,4 +1,6 @@
-CONTAINER_NAME=fingerstyle-frontend-dev-container
+FRONTEND_CONTAINER_NAME=fingerstyle-frontend-dev-container
+BACKEND_CONTAINER_NAME=fingerstyle-backend-dev-container
+
 DOCKER_COMPOSE_OPTS= -f docker-compose.dev.yml 
 
 define docker_compose_run
@@ -10,7 +12,9 @@ define docker_compose
 endef
 
 env:
-	@echo CONTAINER_NAME=$(CONTAINER_NAME) > .env
+	rm .env
+	@echo FRONTEND_CONTAINER_NAME=$(FRONTEND_CONTAINER_NAME) >> .env
+	@echo BACKEND_CONTAINER_NAME=$(BACKEND_CONTAINER_NAME) >> .env
 
 build:
 	@docker build --no-cache --target dev -t fingerstyle-frontend-dev .

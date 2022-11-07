@@ -1,0 +1,18 @@
+FROM docker
+
+RUN apk add --update docker openrc
+RUN rc-update add docker boot
+
+RUN apk add --no-cache \
+    bash \
+    curl \
+    openssh \
+    git \
+    make \
+    openrc
+
+RUN mkdir -p /root/.ssh && chmod 0700 /root/.ssh && ssh-keyscan -t rsa github.com >> /root/.ssh/known_hosts
+
+WORKDIR /root/
+  
+CMD ["/bin/sh"]

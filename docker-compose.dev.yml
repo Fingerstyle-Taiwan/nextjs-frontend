@@ -2,7 +2,7 @@ version: '3.6'
 
 services:
   frontend:
-    container_name: ${CONTAINER_NAME}
+    container_name: ${FRONTEND_CONTAINER_NAME}
     image: fingerstyle-frontend-dev
     volumes:
       - ./:/app
@@ -11,3 +11,17 @@ services:
       - 3000:3000
     stdin_open: true
     tty: true
+
+  backend:
+    container_name: ${BACKEND_CONTAINER_NAME}
+    image: fingerstyle-base
+    volumes:
+      - ~/.ssh/id_rsa:/root/.ssh/id_rsa
+    ports:
+      - 8000:8000
+    command: >
+      sh -c "ssh-keyscan github.com >> ~/.ssh/known_hosts && 
+             git clone git@github.com:Fingerstyle-Taiwan/django-backend.git backend &&
+             cd backend &&
+             make build &&
+             make up"
