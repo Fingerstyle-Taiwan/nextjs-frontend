@@ -1,12 +1,17 @@
 import type { NextPage } from 'next'
-import Template from 'components/shared/Template'
+import Template from 'components/utils/Template'
 import Home from 'components/Home'
 
 const HomePage: NextPage = () => {
   return (
-    <Template>
-      <Home />
-    </Template>
+    <>
+      <div>
+        <h1>頁面重新配置中</h1>
+      </div>
+    </>
+    // <Template>
+    //   <Home />
+    // </Template>
   )
 }
 

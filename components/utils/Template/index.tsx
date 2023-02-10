@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { ReactNode } from 'react'
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 interface TemplateProps {
   children: ReactNode
@@ -12,7 +12,7 @@ const Template = (props: TemplateProps) => {
   return (
     <div>
       <Head>
-        <title>FingerStyle Taiwan</title>
+        <title>Fingerstyle Taiwan</title>
 
         <meta name="description" content="fingerstyle taiwan group" />
         <meta
@@ -21,18 +21,16 @@ const Template = (props: TemplateProps) => {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="FingerStyle Taiwan" />
+        <meta property="og:title" content="Fingerstyle Taiwan 指彈台灣" />
         <meta property="og:description" content="fingerstyle taiwan group" />
         <meta property="og:image" content="/logo.jpg" />
         <meta property="og:url" content="https://www.fingerstyletaiwan.com" />
-        <meta property="og:site_name" content="FingerStyle Taiwan" />
+        <meta property="og:site_name" content="Fingerstyle Taiwan" />
 
         <link rel="icon" href="/logo.jpg" />
       </Head>
       <Navbar />
-      <div className="px-6 lg:px-12 lg:px-36">
-        {children}
-      </div>
+      <div className="px-6 lg:px-12 lg:px-36">{children}</div>
       <Footer />
     </div>
   )
